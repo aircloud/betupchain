@@ -7,4 +7,4 @@
 // export const preURL = 'http://localhost:3001'
 export const preURL = 'https://nas1.niexiaotao.com'
 
-export const constractAddress = 'n1eZd2zUTTHK8EjH9NZbfD75NoaZ6MD5Hp3'
+export const constractAddress = 'n21c2t5nXA1xKB3EX1t1UqBZCCQEtvFE9KL'

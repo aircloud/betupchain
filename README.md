@@ -5,8 +5,6 @@
 [Official website](https://betupchain.com/)
 
 
-
-
 Betupchain 是一个基于 NEBULAS 的区块链竞猜平台，用户可以在平台上参与或者申请发起竞猜活动，另外平台也会定期发布竞猜，比如随机数学竞猜（类似彩票），世界杯竞猜、欧洲杯竞猜、NBA季后赛竞猜等。
 
 Betupchain 通过区块链保证竞猜的公平公证，更多产品构想可以参考[这里](https://betupchain.com/#/about)
