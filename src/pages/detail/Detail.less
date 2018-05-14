@@ -1,0 +1,116 @@
+.detail-container{
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.meta-container{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  .meta-time{
+    flex: 1;
+    text-align: left;
+  }
+  padding-bottom: 15px;
+  border-bottom: 2px solid grey;
+}
+
+.info-container{
+  display: flex;
+  flex-direction: column;
+  h3, p{
+    text-align: left;
+  }
+  h3{
+    margin-top: 15px;
+    font-size: 20px;
+  }
+}
+
+.list-container{
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  .list-title{
+    .list-title-bet{
+      width: max-content;
+      float: right;
+    }
+  }
+  .list-item{
+    //border: 1px solid lightblue;
+    //background-color: #00B7FF;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    .item-name{
+      display: block;
+      width: max-content;
+    }
+    .list-item-vote-container{
+      display: flex;
+      flex-direction: row;
+      .item-progress{
+        width: 75%;
+        margin-right: 10%;
+      }
+      .item-bet{
+        width: 15%;
+      }
+    }
+  }
+}
+
+.oper-container{
+  text-align: left;
+}
+
+.ant-progress-inner {
+  display: inline-block;
+  width: 100%;
+  background-color: #dcdcdc;
+}
+
+.doc-p{
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 680px){
+  .list-container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    .list-title{
+      .list-title-bet{
+        margin-left: 85%;
+      }
+    }
+    .list-item{
+      //border: 1px solid lightblue;
+      //background-color: #00B7FF;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      .item-name{
+        display: block;
+        width: max-content;
+      }
+      .list-item-vote-container{
+        display: flex;
+        flex-direction: row;
+        .item-progress{
+          width: 60%;
+          margin-right: 50px;
+        }
+        .item-bet{
+          float: right;
+          width: calc(40% - 50px);
+        }
+      }
+    }
+  }
+}

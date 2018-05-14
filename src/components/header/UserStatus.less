@@ -1,0 +1,108 @@
+@import (reference) "../../style/var";
+
+.UserLogin{
+  margin-left: 60px;
+  width: max-content;
+  font-size:@tabSize;
+  .Register{
+    color:@assitColor1;
+    margin-right: 25px;
+    cursor: pointer;
+  }
+  .mainColor{
+    color:@mainColor;
+  }
+  .assistColor{
+    color:@assitColor1;
+  }
+  .Login{
+    color:@mainColor;
+    cursor: pointer;
+    margin-left: 25px;
+  }
+  .US-UserName{
+    color:@assitColor1;
+    margin-right: 25px;
+  }
+  .US-LogOut{
+    color:white;
+    cursor: pointer;
+    opacity: 0.9;
+  }
+}
+
+
+.Register-modal-div{
+  margin: 5px auto 0;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  .errorDiv{
+    font-size: @mainColor;
+    color: @dangerColor;
+  }
+  .RMD-inputGroup{
+    .longerLabel{
+      width: 90px;
+    }
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    align-items: center;
+    label{
+      width: 60px;
+      margin-right: 15px;
+      font-size: @mainSize;
+      color:@mainColor;
+    }
+    input{
+      margin: auto;
+      background-color: @inputBackground;
+      border: none;
+      width: 200px;
+      height: 30px;
+      border-radius: 0;
+      color:@lightFontColor;
+      padding: 2px 12px;
+      font-size: 15px;
+      //border: 1px @mainColor solid;
+      &:focus{
+        outline: none;
+      }
+    }
+    button{
+      position: relative;
+      left:-115px;
+      margin-left: 15px;
+      width: 100px;
+      height: 30px;
+      background-color: @mainColor;
+      border: none;
+      color:white;
+      font-size: @tipSize;
+      //border-radius: 0 50px 50px 0;
+    }
+    .shoterInput{
+      width: 100px;
+    }
+    .imgCode{
+      width: 100px;
+      height: 35px;
+    }
+  }
+  .RMD-login{
+    width: 120px;
+    height: 30px;
+    background-color: @mainColor;
+    border: none;
+    color:white;
+    font-size: @tipSize;
+    //border-radius: 7px;
+  }
+
+}
+
+.ant-modal-content,.ant-btn{
+  border-radius: 0;
+}

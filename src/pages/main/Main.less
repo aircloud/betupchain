@@ -1,0 +1,142 @@
+.App {
+  text-align: center;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.App-login-button{
+  border-radius: 0;
+}
+
+.App-login-button:nth-child(1){
+  margin-right: 10px;
+}
+
+.activities-container{
+  margin: auto;
+  min-height: 400px;
+  max-width: 92vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.activities-inner-container{
+  width: 100%;
+}
+
+.activities-list{
+  display: flex;
+  width: 100%;
+  justify-content: flex-start
+}
+
+.activity:hover{
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.activity{
+  max-width: 360px;
+  transition: box-shadow 0.4s;
+  height: 300px;
+  //min-width: 300px;
+  flex: 1;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+  .activity-back{
+    cursor: pointer;
+    position: relative;
+    height: 50%;
+    width: 100%;
+    background-color: #00B7FF;
+    background-size: cover;
+    .activity-tag{
+      position: absolute;
+      //width: max-content;
+      //height:20px;
+      align-items: center;
+      display: block;
+      box-sizing: border-box;
+      left: -5px;
+      top: 10px;
+      color: white;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      padding-left: 10px;
+      padding-right: 10px;
+      background-color: #096dd9;
+      transform: skew(-20deg);
+      span{
+        width: max-content;
+        display: block;
+        transform: skew(20deg);
+      }
+    }
+    .activity-header{
+      position: absolute;
+      bottom:10px;
+      left: 10px;
+      color: white;
+      font-size: 1.2em;
+    }
+  }
+  .activity-content{
+    padding: 10px;
+    .activity-meta{
+      width:100%;
+      height: 24px;
+
+      .activity-number{
+        position: absolute;
+        left: 10px;
+      }
+      .activity-total{
+        position: absolute;
+        right: 10px;
+      }
+    }
+    .activity-abstract{
+      text-align: left;
+      color: #333333;
+      margin-bottom: 10px;
+      overflow-y: scroll;
+      height: 84px;
+      &::-webkit-scrollbar {
+        width: 0;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: #bdf4eb;
+        -webkit-border-radius: 0;
+        border-radius: 0;
+      }
+    }
+    .activity-time{
+      position: absolute;
+      bottom:10px;
+      text-align: left;
+    }
+  }
+}
+
+.activity-important {
+  color: #096dd9;
+  margin-right: 5px;
+  margin-left: 5px;
+  font-weight: 600;
+}
+@media screen and (max-width: 680px) {
+  .activities-container {
+    min-height: 400px;
+  }
+  .activity-time{
+    font-size: 11px;
+  }
+}

@@ -1,0 +1,82 @@
+//颜色部分统一
+
+@mainColor: #096dd9;
+@mainColorDark:#0c60aa;
+
+@mainColor-bac:rgba(10,143,257,0.5);
+
+@mainBackground:#F4F5F5;
+
+@NavfontColor:#979797;
+
+@inputBackground:#F3F4F8;
+@lightFontColor:#999999;
+
+@CatalogColor:#666666;
+
+@buttonColor:#108EE9;
+@buttonColorDark:#086Ec9;
+
+@tipColor:#CCCCCC;
+
+@assitColor1:#41D9B7;
+@assitColor2:#E49514;
+@dangerColor:#D0011B;
+@pink6:#f5317f;
+@pink8:#c11c7b;
+@pink3:#fcb8d3;
+
+@borderColor:#E8E9EA;
+
+@white:#ffffff;
+
+@cancelColor:#8a8a8a;
+
+//字体部分统一
+
+@titleSize1:25px;
+@titleSize2:21px;
+@titleSize3:17px;
+@titleSize4:15px;
+@tabSize:18px;
+@tabSize2:16px;
+@mainSize:14px;
+@tipSize:12px;
+
+body{
+  background: @mainBackground;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.un-mixin1{
+  background-color: @white;
+  border-radius: 8px;
+}
+
+//公共的两栏布局样式样式
+.CommonLayout{
+  display: flex;
+  width: 1200px;
+  margin: 20px auto;
+  .CommonLayoutLeft{
+    width: 205px;
+    margin-right: 20px;
+  }
+  .CommonLayoutCenter{
+    width: 980px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    .CommonLayoutCenterMain{
+      width: 980px;
+      display: flex;
+      flex-wrap:wrap;
+      flex-direction: column;
+    }
+    .CommonLayoutCenterBottom{
+      margin-top: 10px;
+      width: 980px;
+      display: flex;
+    }
+  }
+}
