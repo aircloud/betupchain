@@ -45,10 +45,11 @@ class Header extends Component {
 
     render(){
         return(
-            <header className="App-header">
+            <header className="App-header" style={{backgroundImage: `url(${require('../../resource/img/back1.jpg')})`}}>
                 <div className="App-login-container">
                     <UserStatus userInfo = {this.props.userInfo} userLogOut={this.props.userLogOut}/>
                 </div>
+                <div className="App-Top-Bar">
                 <div className="App-slider">
                     <Link to={'/'}>主页</Link>
                 </div>
@@ -56,6 +57,7 @@ class Header extends Component {
                 <p className="App-intro">
                     Betupchain 是一个基于 NEBULAS 的区块链竞猜平台，用户可以参与或发起竞猜活动，通过区块链来保证竞猜的公平和不可篡改。
                 </p>
+                </div>
             </header>
         )
     }

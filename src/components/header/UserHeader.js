@@ -46,7 +46,7 @@ class Header extends Component {
 
     render(){
         return(
-            <header className="User-header">
+            <header className="User-header" style={{backgroundImage: `url(${require('../../resource/img/back1.jpg')})`}}>
                 <div className="User-login-container">
                     <UserStatus userInfo = {this.props.userInfo} userLogOut={this.props.userLogOut}/>
                 </div>

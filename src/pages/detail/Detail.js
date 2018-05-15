@@ -92,7 +92,7 @@ class Detail extends Component {
                             <div className="list-item" key={index}>
                                 <div className="item-name">{item.name}</div>
                                 <div className="list-item-vote-container">
-                                    <Progress className="item-progress" percent={this.state.content.nas === 0 ? 0 : item.nas / this.state.content.nas * 100} format={precent => item.nas + "NAS" /*TODO NEED CHANGE*/}/>
+                                    <Progress className="item-progress" percent={this.state.content.nas === 0 ? 0 : item.nas / this.state.content.nas * 100} format={precent => item.nas.toFixed(4) + "NAS" /*TODO NEED CHANGE*/}/>
                                     <InputNumber min={0.1} step={0.1} onChange={(value)=>{
                                         let votes = this.state.votes;
                                         if(!isNaN(value))

@@ -1,14 +1,25 @@
 .App-login-container{
   right: 15px;
-  top: 15px;
+  top: 0;
   position: absolute;
+  z-index: 2;
+}
+
+.App-Top-Bar{
+  width: 100vw;
+  height: 55px;
+  background-color: rgba(255,255,255,0.1);
+  position: absolute;
+  top:0;
 }
 
 .App-slider{
+  z-index: 2;
   left: 15px;
-  top: 15px;
+  line-height: 55px;
   position: absolute;
   a{
+    line-height: 55px;
     color: white;
     text-decoration: none;
     font-size: 18px;
@@ -21,27 +32,32 @@
 }
 
 .App-header {
-  background-color: #222;
+  background-color: #0e1c29;
   height: 220px;
-  padding: 20px;
+  //padding: 20px;
   color: white;
   position: relative;
+  background-size: 100%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
 }
 
 .App-title {
-  margin-top: 50px;
+  margin-top: 80px;
   font-size: 2em;
   color: white
 }
 
 .App-intro {
+  padding-right: 20px;
+  padding-left: 20px;
   font-size: large;
   font-weight: 200;
 }
 
 @media screen and (max-width: 680px){
   .App-title {
-    margin-top: 60px;
+    margin-top: 75px;
     font-size: 1.4em;
     color: white
   }
